@@ -20,7 +20,7 @@ A real-time model, it uses webcam or IP camera for object detection from an over
 
 Using the Euclidean Distance, the pairwise centroid distances between detected bounding boxes are measured.
 
-A threshold is defined to check social distance violation among people, here it is set as 80 pixels. If the centroid distance between two bounding box is less than 80 pixel, then it sets the box color as red as a trigger to social distance violation. Yellow color is set if pedestrians are on the vereg of violation, and grenn bounding box refers that centroid distance is far greater than 80 pixel representing safe distance.
+A threshold is defined to check social distance violation among people, here it is set as 80 pixels. If the centroid distance between two bounding box is less than 80 pixel, then it sets the box color as red as a trigger to social distance violation. Yellow color is set if pedestrians are on the verge of violation, and grenn bounding box refers that centroid distance is far greater than 80 pixel representing safe distance.
 
 As a person's appearance vary significantly from an overhead view, transfer learning method is used to improve the pre-trained model's performance.
 
@@ -30,7 +30,9 @@ As a person's appearance vary significantly from an overhead view, transfer lear
 In mylib/config.py
 
 ```set url = 0 for using webcam```
+
 ```set url = '' as IP camera url```
+
 ```set alert = true for mail alerts```
 
 To run the program in real-time
