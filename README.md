@@ -27,6 +27,12 @@ As a person's appearance vary significantly from an overhead view, transfer lear
 
 ### To run the model
 
-'''python run.py'''
-'''set url=0 for using webcam'''
-'''set url='' as IP camera url'''
+In mylib/config.py
+
+```set url = 0 for using webcam```
+```set url = '' as IP camera url```
+```set alert = true for mail alerts```
+
+To run the program in real-time
+
+```python run.py```
